@@ -1,0 +1,71 @@
+button {
+    width: 200px;
+    height:30px;
+    background-color: rgb(0 , 153 , 204);
+      border: 2px solid rgb(0 , 153 , 204); 
+    border-radius: 5px; 
+	}
+    button:hover{
+        background-color: rgb(0 , 165 , 236);
+    }
+
+.box1 {
+    font-family: "Sofia", sans-serif;
+
+}
+
+ 
+.box2{
+    background-color: yellow;
+    width: 200px;
+    margin: 20px auto;
+    height: 100px;
+   transition : width 2s;
+}
+
+
+.box2:hover {
+    width: 800px;
+   }
+
+
+.test {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50% ;
+    display: inline-block;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        text-align: center;
+        background-color: green;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    body {
+        text-align: center;
+        background-color: blue;
+    }
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite
+  }
+   
+    @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
